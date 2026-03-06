@@ -1,0 +1,41 @@
+body {
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.rectangle {
+    width: 200px;
+    height: 100px;
+    background: blue;
+    border-radius: 20px;
+    animation: moveBox 4s infinite alternate;
+}
+
+@keyframes moveBox {
+
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+        background: blue;
+    }
+
+    25% {
+        transform: translate(1300px, 0px) rotate(180deg);
+        background: yellow;
+
+    }
+
+    50% {
+        transform: translate(1300px, 650px) rotate(0deg);
+        background: red;
+    }
+
+    75% {
+        transform: translate(0px, 650px) rotate(180deg);
+        background: rgb(233, 77, 103);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+        background: orange;
+    }
+}
