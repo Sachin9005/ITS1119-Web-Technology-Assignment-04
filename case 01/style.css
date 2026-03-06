@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.side {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: 12%;
+    padding-top: 100px;
+    gap: 20px;
+}
+
+.sideBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 2px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background: blueviolet;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transform: translateX(-150px);
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.sideBar:hover {
+    transform: translateX(0px);
+}
+
+.sideBar img {
+    width: 30px;
+    height: 30px;
+}
